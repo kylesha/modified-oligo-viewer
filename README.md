@@ -23,7 +23,7 @@ One (of many) solution to better visualize a collection of modified oligos is to
 ## Usage
 The `ModifiedOligo` class was written to achieve these objectives.
 
-__See the Jupyter notebook for an example use case.__
+__See an example use case in the file "example-usage.pdf".__
 
 #### Dependencies
 The `ModifiedOligo` class requires the [Biopython package](https://biopython.org/wiki/Download). It uses Biopython's `Bio.SeqRecord` object as the starting point for creating an oligo. The rational is that the `ModifiedOligo` object can then be added back as metadata to BioPython's `Bio.SeqFeature` object. (However, this feature is not yet implemented at this time). Additionally, Biopython enforces creation of unambiguous biological sequences. So for example, "AGTA" is a DNA sequence of adenine+guanine+thymine+adenine, NOT a peptide of alanine+glycine+threonine+alanine!  
